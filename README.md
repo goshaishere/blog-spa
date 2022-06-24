@@ -1,4 +1,4 @@
-# git-search-app
+# blog-spa
 
 ### installation guide
 

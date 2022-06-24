@@ -7,13 +7,12 @@ import { Blog } from "./pages/blog/Blog"
 import {Solutions} from "./pages/solutions/Solutions"
 import {Contacts} from './pages/contacts/Contacts'
 
-
 function App() {
   return (
     <div className="App">
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index path="blog" element={<Blog />} />
+            <Route index path="/" element={<Blog />} />
             <Route path="about" element={<About />} />
             <Route path="solutions" element={<Solutions />} />
             <Route path="contacts" element={<Contacts />} />

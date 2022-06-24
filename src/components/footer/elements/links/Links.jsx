@@ -7,7 +7,7 @@ export const Links = () => {
     <div className={styles.links}>
         <CustomLink className={styles.link} text='Готовые Решения' to='/solutions'></ CustomLink>
         <CustomLink className={styles.link} text='О Нас'  to='/about'></CustomLink>
-        <CustomLink className={styles.link} text='Блог' to='/blog'></CustomLink>
+        <CustomLink className={styles.link} text='Блог' to='/'></CustomLink>
         <CustomLink className={styles.link} text='Контакты' to='/contacts'></CustomLink>
     </div>
   )

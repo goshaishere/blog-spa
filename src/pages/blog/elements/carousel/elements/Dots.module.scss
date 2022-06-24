@@ -1,0 +1,43 @@
+.dots {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+
+  position: absolute;
+  width: 99px;
+  height: 3px;
+  left: 138px;
+  top: 479px;
+
+  .dot_active {
+    width: 29px;
+    height: 3px;
+  
+    
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .dot_passive {
+    width: 29px;
+    height: 3px;
+  
+    
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+
+}

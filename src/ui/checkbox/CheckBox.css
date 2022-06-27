@@ -8,7 +8,7 @@
     user-select: none;
   }
   .container input::before {
-    position: absolute;
+    
     opacity: 0;
     cursor: pointer;
     height: 16;
@@ -17,7 +17,7 @@
     border-radius: 0.25em;
   }
   .checkmark {
-    position: absolute;
+    
     top: 0;
     left: 0;
     height: 16px;
@@ -37,7 +37,7 @@
   }
   .checkmark:after {
     content: "";
-    position: absolute;
+    
     display: none;
   }
   .container input:checked ~ .checkmark:after {
@@ -67,7 +67,7 @@
   
   /* Hide the browser's default checkbox */
   .container input {
-    position: absolute;
+    
     opacity: 0;
     cursor: pointer;
     /* height: 0;
@@ -76,7 +76,7 @@
   
   /* Create a custom checkbox */
   .checkmark {
-    position: absolute;
+    
     top: 0;
     left: 0;
     height: 25px;
@@ -98,7 +98,7 @@
   /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
-    position: absolute;
+    
     display: none;
   }
   

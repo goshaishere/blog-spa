@@ -1,9 +1,40 @@
 .header {
-  position: absolute;
-  width: 1440px;
-  width: 100%;
+  padding-left: 138px;
+  padding-right: 138px;
   height: 88px;
-  left: 0px;
-  top: 0px;
-  border: solid 1px black;
+  display: flex;
+  //border: solid 1px black;
+  justify-content: space-between;
+}
+
+.header__logo {
+}
+
+.header__info {
+  display: flex;
+  flex-direction: row;
+  padding-top: 34px;
+}
+
+.email {
+  width: 114px;
+  height: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #888888;
+}
+
+.number {
+  margin-left: 40px;
+  width: 134px;
+  height: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #888888;
 }

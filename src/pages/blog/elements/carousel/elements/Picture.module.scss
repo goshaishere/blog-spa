@@ -1,8 +1,10 @@
 .picture {
     position: absolute;
+    z-index: 1;
+    width: 1440px;
+    height: 546px;
+    //display: flex;
+    //justify-content: flex-end;
     content: url(K4C.png);
-    //float: right;
     right: 0%;
-    //z-index: 1;
-    display: inline-block
 }

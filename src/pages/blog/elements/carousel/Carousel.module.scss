@@ -1,11 +1,66 @@
-.carousel {
-  position: absolute;
-  //width: 1440px;
+
+.spot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  height: 546px;
-  left: 0px;
-  top: 88px;
+  height:546px;
   background: linear-gradient(100.68deg, #5991ff 13.6%, #0050ef 94.69%);
-  
-  
 }
+
+.carousel__container1{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1330px;
+  height: 100%;
+}
+.carousel__container2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1330px;
+  height: 100%;
+}
+
+
+
+.box {
+  margin-left: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+.text__container1 {
+  z-index: 10;
+  margin-top: 100px;
+  // margin-left: 137px;
+  width: 1330px;
+  display: flex;
+  flex-direction: column;
+  justify-content:  flex-start;
+}
+.text__container2 {
+  z-index: 10;
+  width: 1330px;
+  display: flex;
+  flex-direction: column;
+  justify-content:  flex-start;
+}
+.button__container2 {
+  z-index: 10;
+  margin-top: 100px;
+  margin-left: 138px;
+  display: flex;
+  flex-direction: row;
+  justify-content:  flex-start;
+}
+
+

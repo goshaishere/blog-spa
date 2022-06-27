@@ -1,8 +1,29 @@
+.spot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+
 .cards {
-    position: absolute;
-    width: 1164px;
-    height: 796px;
-    left: 138px;
-    top: 782px;
-    background: #f6f9ff;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  //justify-content: center;
+  width: 1330px;
+  height: 100%;
+  
+}
+
+.box {
+  margin-left: 138px;
+  // border: 1px solid black;
+  //width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:  flex-start;
+
 }

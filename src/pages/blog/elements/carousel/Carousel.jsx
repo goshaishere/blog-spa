@@ -8,12 +8,40 @@ import { Dots } from './elements/Dots'
 
 export const Carousel = () => {
   return (
-    <div className={styles.carousel}>
-      <Picture />
-      <Text1 />
-      <Text2 />
-      <CarouselButton />
-      <Dots />
+    <div className={styles.spot}>
+
+      
+      {/* <div className={styles.carousel}> */}
+        <div className={styles.box}>
+
+        <div className={styles.carousel__container1}>
+          <Text1  className={styles.text__container1}/>
+          <Text2 className={styles.text__container2}/>
+          <CarouselButton className={styles.button__container}/>
+
+          </div>
+        {/* </div> */}
+
+
+        <div className={styles.carousel__container2}>
+
+        {/* <div className={styles.box2}> */}
+          <Dots />
+        </div>
+
+        </div>
+
+
+        <div className={styles.carousel__picture_box}>
+     
+        </div>
+
+
+
+        <Picture />
+
+
+      {/* </div> */}
     </div>
   )
 }

@@ -1,0 +1,3 @@
+export const SET_IS_FETCHING = "SET_IS_FETCHING"
+export const SET_FETCH_ERROR = "SET_FETCH_ERROR"
+export const SET_CARDS = "SET_CARDS"

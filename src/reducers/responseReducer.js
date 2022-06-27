@@ -1,45 +1,27 @@
-const SET_RATES = "SET_RATES";
-const SET_CALLS = "SET_CALLS";
-const SET_IS_FETCHING = "SET_IS_FETCHING";
-const SET_FETCH_ERROR = "SET_FETCH_ERROR";
-const SET_EMP_LIST = "SET_EMP_LIST"
+import * as TYPE from '../constants/ActionTypes'
 
 const defaultState = {
   response: [],
-  totalRows: 0,
-  results: [],
+  cards: [],
   isFetching: true,
   isFetchError: false,
-  empList: [],
 };
 
 export default function responseReducer(state = defaultState, action) {
   switch (action.type) {
-    case SET_CALLS:
+    case TYPE.SET_CARDS:
       return {
         ...state,
         isFetching: false,
         response: action.payload,
-        totalRows: action.payload.total_rows,
-        results: action.payload.results
+        cards: action.payload.data.articles
       };
-
-    case SET_EMP_LIST:
-      return{
-        ...state,
-        empList: action.payload
-      }
-    case SET_RATES:
-      return {
-        ...state,
-        isFetching: false,
-      };
-    case SET_IS_FETCHING:
+    case TYPE.SET_IS_FETCHING:
       return {
         ...state,
         isFetching: action.payload,
       };
-    case SET_FETCH_ERROR:
+    case TYPE.SET_FETCH_ERROR:
       return {
         ...state,
         isFetchError: action.payload,
@@ -49,17 +31,13 @@ export default function responseReducer(state = defaultState, action) {
   }
 }
 
-export const setRates = (rates) => ({ type: SET_RATES, payload: rates });
 export const setIsFetching = (bool) => ({
-  type: SET_IS_FETCHING,
+  type: TYPE.SET_IS_FETCHING,
   payload: bool,
 });
 export const setFetchError = (bool) => ({
-  type: SET_FETCH_ERROR,
+  type: TYPE.SET_FETCH_ERROR,
   payload: bool,
 });
 
-export const setCalls = (calls) => ({ type: SET_CALLS, payload: calls });
-
-
-export const setEmpList = (list) => ({ type: SET_EMP_LIST, payload: list });
+export const setCards = (cards) => ({ type: TYPE.SET_CARDS, payload: cards });

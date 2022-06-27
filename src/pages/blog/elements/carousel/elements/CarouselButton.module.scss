@@ -1,4 +1,5 @@
 .carousel__details_button {
+  margin-bottom: 114px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -6,11 +7,9 @@
   padding: 16px 32px;
   gap: 10px;
 
-  position: absolute;
   width: 162px;
-  height: 52px;
-  left: 137px;
-  top: 401px;
+  // left: 137px;
+  // top: 401px;
 
   background: #ffffff;
   border-radius: 10px;
@@ -24,9 +23,10 @@
   line-height: 20px;
   /* identical to box height */
 
-  text-align: right;
+  // text-align: right;
 
   color: #0050ef;
+  // margin-bottom: 130px;
 
   /* Inside auto layout */
 

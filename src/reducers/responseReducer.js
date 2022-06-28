@@ -5,16 +5,33 @@ const defaultState = {
   cards: [],
   isFetching: true,
   isFetchError: false,
+
+  authors: []
 };
+
+  const getAuthors = (cards) => {
+    let result = []
+    cards.map((el, index) => {
+      result.push(el.author)
+      console.log(index, el.author)
+      // setAuthors(authors.concat([el.author]))
+    })
+
+    return result
+  }
+
+
 
 export default function responseReducer(state = defaultState, action) {
   switch (action.type) {
     case TYPE.SET_CARDS:
+      const authors = getAuthors(action.payload.data.articles)
       return {
         ...state,
         isFetching: false,
         response: action.payload,
-        cards: action.payload.data.articles
+        cards: action.payload.data.articles,
+        authors: authors
       };
     case TYPE.SET_IS_FETCHING:
       return {

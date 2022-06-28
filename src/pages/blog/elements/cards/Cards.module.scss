@@ -4,18 +4,20 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: 60px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 .cards {
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   //justify-content: center;
   width: 1330px;
   height: 100%;
-  
 }
 
 .box {
@@ -25,5 +27,4 @@
   display: flex;
   flex-direction: row;
   justify-content:  flex-start;
-
 }

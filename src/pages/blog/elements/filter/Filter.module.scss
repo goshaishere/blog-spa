@@ -1,10 +1,13 @@
 .spot {
+  position: sticky;
+  top: 0px;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-
+  background: #F6F9FF;
 }
 
 .filter__container {

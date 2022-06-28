@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const Tg = () => {
   return (
     <svg style={{"left":"12.5%","right":"12.5%","top":"18.75%","bottom":"18.75%"}} width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">

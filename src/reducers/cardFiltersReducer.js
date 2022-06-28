@@ -1,11 +1,11 @@
 import * as TYPE from '../constants/ActionTypes'
 
+
 const defaultState = {
     name: null,
     dateFrom: null,
     dateTo: null
 };
-
 
 export default function cardFiltersReducer(state = defaultState, action) {
   switch (action.type) {
@@ -33,6 +33,7 @@ export const setName = (name) => ({
   type: TYPE.SET_NAME,
   payload: name,
 });
+
 export const setDateFrom = (date) => ({
   type: TYPE.SET_DATE_FROM,
   payload: date,
@@ -42,4 +43,3 @@ export const setDateTo = (date) => ({
     type: TYPE.SET_DATE_TO,
     payload: date,
   });
-

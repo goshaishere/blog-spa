@@ -6,13 +6,10 @@ import responseReducer from "./responseReducer";
 import cardFiltersReducer from './cardFiltersReducer'
 
 
-
 const rootReducer = combineReducers({
   response: responseReducer,
   filters: cardFiltersReducer
 });
-
-
 
 export const store = createStore(
   rootReducer,

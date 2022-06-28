@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const Logo = () => {
   return (
     <div style={{paddingTop: "29px"}}>
@@ -15,9 +16,6 @@ export const Logo = () => {
         <circle cx="6.92305" cy="23.0769" r="6.92305" fill="#0050EF" />
         <circle cx="23.077" cy="23.0769" r="6.92305" fill="#0050EF" />
       </svg>
-
     </div>
-
-
   )
 }

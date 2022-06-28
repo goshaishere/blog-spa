@@ -8,6 +8,7 @@ import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css'
 import { setDateFrom, setDateTo } from '../../../../reducers/cardFiltersReducer'
 
+
 // const style = {
 //   fontFamily:"\"Montserrat\"",
 //   fontStyle:"normal",
@@ -19,44 +20,38 @@ import { setDateFrom, setDateTo } from '../../../../reducers/cardFiltersReducer'
 //   outline:"none"
 // };
 
+
 export const Filter = () => {
   const dispatch = useDispatch()
-
   const authors = useSelector(state => state.response.authors)
-  console.log(authors)
   const [valueOfButton, setValueOfButton] = useState('Выбор автора')
-
-  const [selectedDateFrom, handleDateChangeFrom] = useState('');
-  const [selectedDateTo, handleDateChangeTo] = useState('');
-
+  const [selectedDateFrom, handleDateChangeFrom] = useState('')
+  const [selectedDateTo, handleDateChangeTo] = useState('')
   const [editValue, setEditValue] = useState(null)
-
   const [hideFrom, sethideFrom] = useState('')
   const [hideTo, sethideTo] = useState('')
-
-  const [valueModal, setValueModal] = React.useState(new Date());
+  const [valueModal, setValueModal] = React.useState(new Date())
+  const [anchorEl, setAnchorEl] = React.useState(null)
+  const [startDate, setStartDate] = useState('')
+  const [finishDate, setFinishDate] = useState('')
+  const open = Boolean(anchorEl)
 
   useEffect(() => {
-  }, [valueOfButton]);
+  }, [valueOfButton])
 
+  useEffect(() => {
+    console.log(startDate)
+    dispatch(setDateFrom(startDate))
+  }, [startDate]);
 
+  useEffect(() => {
+    console.log(finishDate)
+    dispatch(setDateTo(finishDate))
+  }, [finishDate]);
 
-
-
-
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  
-
-  const open = Boolean(anchorEl);
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchorEl(event.currentTarget)
   };
-
-
-
-
 
   const handler = (e) => {
     let name = e.target.getAttribute('value')
@@ -68,44 +63,24 @@ export const Filter = () => {
   const fromClickHandler = (e) => {
     console.log('fromClickHandler')
     setEditValue(e.target.name)
-}
-
-const toClickHandler = (e) => {
-  console.log('toClickHandler')
-  setEditValue(e.target.name)
-}
-
-const handleChangeFrom = (event) => {
-  let value = event.target.value
-  sethideFrom(value)
-  handleDateChangeFrom(value)
   }
 
+  const toClickHandler = (e) => {
+    console.log('toClickHandler')
+    setEditValue(e.target.name)
+  }
 
+  const handleChangeFrom = (event) => {
+    let value = event.target.value
+    sethideFrom(value)
+    handleDateChangeFrom(value)
+  }
 
-
-const handleChangeTo = (event) => {
-  handleDateChangeTo(event.value)
-}
-
-const [startDate, setStartDate] = useState('');
-const [finishDate, setFinishDate] = useState('');
-
-
-useEffect(() => {
-  console.log(startDate)
-  dispatch(setDateFrom(startDate))
-}, [startDate]);
-
-useEffect(() => {
-  console.log(finishDate)
-  dispatch(setDateTo(finishDate))
-}, [finishDate]);
-
-
+  const handleChangeTo = (event) => {
+    handleDateChangeTo(event.value)
+  }
 
   return (
-    
     <div className={styles.spot}>
       <div className={styles.box}>
         <div className={styles.filter__container}>
@@ -136,25 +111,14 @@ useEffect(() => {
               }
             </Menu>
           </div>
-
-
           <div className={styles.input__container}>
-
-          <DatePicker style={{zIndex: '100'}} defaultValue='От'   selected={startDate} onChange={(date) => setStartDate(date)} />
-          <div className={styles.input__divider} ><svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16667 1H10.8333" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
-          <DatePicker style={{zIndex: '100'}}  selected={finishDate} onChange={(date) => setFinishDate(date)} />
-
-            <input className={styles.input__from} type="text" name='from' placeholder='От' autoComplete='off' onClick={fromClickHandler} value={selectedDateFrom} onChange={handleChangeFrom}/>
+            <DatePicker style={{ zIndex: '100' }} defaultValue='От' selected={startDate} onChange={(date) => setStartDate(date)} />
             <div className={styles.input__divider} ><svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16667 1H10.8333" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
-            <input className={styles.input__to} type="text" name='to' placeholder='До' autoComplete='off' onClick={toClickHandler} value={selectedDateTo} onChange={handleChangeTo}/>
-
-
-
+            <DatePicker style={{ zIndex: '100' }} selected={finishDate} onChange={(date) => setFinishDate(date)} />
+            <input className={styles.input__from} type="text" name='from' placeholder='От' autoComplete='off' onClick={fromClickHandler} value={selectedDateFrom} onChange={handleChangeFrom} />
+            <div className={styles.input__divider} ><svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16667 1H10.8333" stroke="#888888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
+            <input className={styles.input__to} type="text" name='to' placeholder='До' autoComplete='off' onClick={toClickHandler} value={selectedDateTo} onChange={handleChangeTo} />
           </div>
-            
-
-
-
         </div>
       </ div>
     </div>

@@ -1,4 +1,3 @@
-
 .spot {
   display: flex;
   flex-direction: row;
@@ -18,6 +17,7 @@
   width: 1330px;
   height: 100%;
 }
+
 .carousel__container2{
   display: flex;
   flex-direction: row;
@@ -27,16 +27,12 @@
   height: 100%;
 }
 
-
-
 .box {
   margin-left: 138px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-
-
 
 .text__container1 {
   z-index: 10;
@@ -47,6 +43,7 @@
   flex-direction: column;
   justify-content:  flex-start;
 }
+
 .text__container2 {
   z-index: 10;
   width: 1330px;
@@ -54,6 +51,7 @@
   flex-direction: column;
   justify-content:  flex-start;
 }
+
 .button__container2 {
   z-index: 10;
   margin-top: 100px;
@@ -62,5 +60,3 @@
   flex-direction: row;
   justify-content:  flex-start;
 }
-
-

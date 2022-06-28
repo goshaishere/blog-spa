@@ -3,6 +3,7 @@ import { Carousel } from './elements/carousel/Carousel'
 import { Filter } from './elements/filter/Filter'
 import { Cards } from "./elements/cards/Cards"
 
+
 export const Blog = () => {
     return (
         <div >

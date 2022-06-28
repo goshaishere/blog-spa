@@ -1,7 +1,6 @@
 .spot {
   position: sticky;
   top: 0px;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,7 +10,6 @@
 }
 
 .filter__container {
-  //position:sticky;
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
@@ -20,14 +18,10 @@
   justify-content: flex-start;
   width: 1330px;
   height: 100%;
-
 }
-
 
 .box {
   margin-left: 138px;
-  //border: 1px solid black;
-  // width:100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,16 +29,12 @@
 }
 
 .select__container {
-  
   display: flex;
-  // width: 335px;
-  // height: 52px;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-right: 21px;
   left: 0px;
   top: 634px;
-  //background: #f6f9ff;
   background: #FFFFFF;
   display: flex;
   flex-direction: row;
@@ -53,28 +43,23 @@
 .select__select_icon {
   margin-left: 19.33px;
   margin-right: 13.33px;
-  
 }
+
 .select {
   cursor: pointer;
   appearance: none;
   border: none;
   outline: none;
-
   width: 243px;
   height: 20px;
-
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
-
   color: #888888;
   background: url("./select_icon.svg");
 
-  /* Inside auto layout */
   .option {
     border: none;
     outline: none;
@@ -93,10 +78,7 @@
 .input__container {
   display: flex;
   margin-left: 20px;
-  
   padding: 16px;
-  // padding-top: 16px;
-  // padding-bottom: 16px;
   background: #FFFFFF;
   border-radius: 10px;
 }
@@ -107,10 +89,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
-
   color: #888888;
-
   border: none;
   outline: none;
 }
@@ -126,10 +105,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
-
   color: #888888;
-
   border: none;
   outline: none;
 }

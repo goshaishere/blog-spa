@@ -1,14 +1,14 @@
 import React, { useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux'
-import { getCards } from './actions/rates'
-
+import { getCards } from './actions/actions'
 import { Route, Routes } from "react-router-dom"
 import { Layout } from './components/layouts/Layout'
-import { NotFound } from './pages/yet/404page/404'
 import {About} from './pages/yet/about/About'
-import { Blog } from "./pages/blog/Blog"
 import {Solutions} from "./pages/yet/solutions/Solutions"
 import {Contacts} from './pages/yet/contacts/Contacts'
+import { NotFound } from './pages/yet/404page/404'
+import { Blog } from "./pages/blog/Blog"
+
 
 function App() {
   const dispatch = useDispatch()

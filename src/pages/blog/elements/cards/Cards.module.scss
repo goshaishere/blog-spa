@@ -5,25 +5,18 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 60px;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  //justify-content: center;
   width: 1330px;
   height: 100%;
 }
 
 .box {
   margin-left: 138px;
-  // border: 1px solid black;
-  //width:100%;
   display: flex;
   flex-direction: row;
   justify-content:  flex-start;

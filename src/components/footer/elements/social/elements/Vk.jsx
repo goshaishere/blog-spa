@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const Vk = () => {
   return (
     <svg style={{"left":"6.25%","right":"6.25%","top":"25%","bottom":"21.48%"}} width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const Twitter = () => {
   return (
     <svg style={{ "left": "12.5%", "right": "7.67%", "top": "18.75%", "bottom": "16.38%" }} width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
